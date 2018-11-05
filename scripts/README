@@ -1,0 +1,17 @@
+This set of R scripts can be used to process annual MODIS NDVI tiff
+files to create the full suite of LanDAT maps and measures for the
+conterminous US. Follow the 2 steps below to set-up this analysis, then
+execute main.R. The scripts will automatically check for, and install
+any missing R libraries (see vars.R).
+
+### Step 1) Set-up the run parameters including the full paths to this
+directory in vars.R.  Specifically check the following variables:
+	bpath
+	srcpath
+	sptrn   # Prefix name patern of raster files
+	mask	# If set to true then a raster called mask.tif is expected
+	        #  in same dir as input rasters
+        nfac
+        rast.format
+
+### Step 2) Execute main.R
